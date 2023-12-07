@@ -786,6 +786,7 @@ sectionIcon.ZIndex = 1
 sectionIcon.Parent = section
 
 Info.Open = Info.Open or false
+print(Info.Open)
 if Info.Open then
     Closed.Value = not Closed.Value
     TweenService:Create(section, TweenInfo.new(.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {Size = Closed.Value and UDim2.new(0, 162, 0, SizeY + 4) or UDim2.new(0, 162, 0, 27)}):Play()
